@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Rankings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--new added code -->
+
+ <!-- Filter Section -->
+ <div class="filters">
+  <!-- <input type="text" id="searchInput" placeholder="Search by college name...">--> 
+    <label for="feesFilter">Max Fees:</label>
+    <select id="feesFilter">
+        <option value="all">All</option>
+        <option value="100000">₹1,00,000</option>
+        <option value="200000">₹2,00,000</option>
+        <option value="300000">₹3,00,000</option>
+        <option value="400000">₹4,00,000</option>
+    </select>
+    <label for="ratingFilter">Min Rating:</label>
+    <select id="ratingFilter">
+        <option value="all">All</option>
+        <option value="5">5+</option>
+        <option value="6">6+</option>
+        <option value="7">7+</option>
+        <option value="8">8+</option>
+        <option value="9">9+</option>
+    </select>
+</div>
+
+<!--end-->
+
+    <div class="table-container">
+      <!----  <input type="text" id="search" placeholder="Search by college name..." onkeyup="searchCollege()">-->
+        <input type="text" id="searchInput" placeholder="Search by college name...">
+
+        <table id="collegeTable">
+            <thead>
+                <tr>
+                    <th>CD Rank</th>
+                    <th>Colleges</th>
+                    <th onclick="sortTable('fees')">Course Fees</th>
+                    <th onclick="sortTable('placement')">Placement</th>
+                    <th onclick="sortTable('userRating')">User Reviews</th>
+                    <th onclick="sortTable('ranking')">Ranking</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
