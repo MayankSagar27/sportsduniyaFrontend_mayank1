@@ -18,4 +18,11 @@ This project is a dynamic college listing table built with HTML, CSS, and JavaSc
 - A text editor (e.g., VSCode, Sublime Text) for editing the code if needed.
 
 ### Project Structure
+To run -
+Installing the neccessary modules using
+
+npm install
+To run the project
+
+npm run dev
 
